@@ -1,6 +1,6 @@
 function bestCharge(selectedItems) {
   var items = loadAllItems();
-  var scale = loadPromotions();
+  var scale = loadPromotions()[1].items;
 
   var order = getOrder(selectedItems, items);
   var cal = calculate(order,scale);
